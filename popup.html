@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <title>Coffe Cup Switch</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1><span id="minute">00</span>:<span id="second">00</span></h1>
+      <label class="checkControl">
+        <input type="checkbox" class="checkbox" />
+        <span></span>
+        <text class="stop">STOP</text>
+        <text class="start">START</text>
+      </label>
+      <form>
+        <label class="timeLabel">
+          Min
+          <input id="choise-min" type="number" min="0" max="59" value="00" />
+          <input id="choise-sec" type="number" min="0" max="59" value="00" />
+          Sec
+        </label>
+      </form>
+      <button id="reset">Reset</button>
+      <audio id="myAudio">
+        <source src="./soundfile.mp3" type="audio/mpeg" />
+      </audio>
+    </div>
+    <script src="./popup.js"></script>
+  </body>
+</html>
